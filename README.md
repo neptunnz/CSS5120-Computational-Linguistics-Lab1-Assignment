@@ -1,78 +1,27 @@
-# CSS5120: CL-Lab1-Text-Commons
-
-This is the repository for the **CSS5120: Computational Linguistics Lab 1 Assignment**.
-
-In this assignment, each student will contribute a data source of their interest. You are also encouraged to reference and use data contributed by other students in future projects. We hope everyone will act as both a **contributor** and a **beneficiary** of this data collection.
-
-## Assignment Requirements
-
-The core objective of this Lab is **non-crawler** text data collection.
-
-1.  **Data Source Requirements**:
-    *   Please use **Public Datasets** (HuggingFace, Arxiv, Kaggle, Common Crawl, or Published Datasets), **Official APIs** (Wikipedia, Reddit, The Guardian, etc.), or **Digital Archives** (Project Gutenberg).
-    *   We encourage mining **"long-tail" domains** (e.g., movie scripts, legal documents, lyrics, ancient texts, code comments, etc.).
-
-2.  **Submission Standards**:
-    *   Each student must submit **one dataset** accompanied by a detailed documentation file.
-
-3.  **Data Format**:
-    *   Recommended formats: **`.txt`**, **`.jsonl`**, **`.csv`**, or other common plain text formats.
-    *   **Size & Representativeness**: There are no strict requirements on data size or representativeness. The goal is to demonstrate the availability of the data source.
-        *   If collecting via **API**, returning **100 to 500 records** is sufficient.
-        *   If submitting a **public dataset**, you may provide the full dataset OR the first 100 rows with a direct link included in the readme.
-
----
-
-## Submission Guide
-
-Please follow these steps to submit your assignment via the **Pull Request** workflow:
-
-1.  **Fork** this repository to your own GitHub account.
-2.  Create a new folder under the `data/` directory.
-    *   **Naming Convention**: `Name_DataTopic`
-    *   *Example: `ZhangSan_Shakespeare`*
-3.  Upload the following two files into your folder:
-    *   **Data File** (The dataset itself)
-    *   **Documentation**: `Yourname_README.md` (see the template below).
-4.  Submit a **Pull Request (PR)** to the `main` branch of this repository.
-
-### Directory Structure Example
-
-```text
-CL-Lab1-Text-Commons/
-├── README.md                       <-- (The file you are reading)
-├── data/
-│   ├── ZhangSan_Shakespeare/   <-- Your Folder
-│   │   ├── sonnets.txt                 <-- Your Data
-│   │   └── Zhangsan_README.md                   <-- Your Metadata Card
-│   ├── LiSi_LegalCases/
-│   │   ├── cases_sample.csv
-│   │   └── LIsi_README.md
-│   └── ...
-```
-
----
-
-## Your Data's Readme Template (Yourname_README.md)
-
-Please use the following template.
-
-### Naming Convention
-
-Please add your name as a prefix to the filename of your data's readme (e.g., "Yourname_readme.md")
-
-And Please ensure your file includes the following content:
+# Zhang Yunzhou_anime waifu personality chat_README.md
 
 ### 1. Metadata Card
 
 | Field | Content |
-| :--- | :--- |
-| **Contributor** | [Your Name] |
-| **Data Source** | [Source Name & URL, e.g., Project Gutenberg (http://...)] |
-| **Domain/Category** | [e.g., Literature / Sentiment Analysis / Medical / Dialogue] |
-| **Language** | [e.g., English (Early Modern) / zh-CN] |
-| **Data Scale** | [e.g., 154 Sonnets / 5MB / 10k lines] |
-| **File Format** | [.txt / .jsonl / .csv] |
+|---|---|
+| Contributor | [Zhang Yunzhou] |
+| Data Source | Anime Waifu Personality - Custom created chat-style dialogues based on anime character archetypes |
+| Domain/Category | Conversational AI / Anime / Character Personality / Dialogue Generation |
+| Language | English (with possible anime-specific terminology) |
+| Data Scale | [e.g., 10,000+ dialogue pairs / 5MB+ / 15 character archetypes covered] |
+| File Format | .json / .jsonl |
 
 ### 2. Dataset Introduction
-Briefly describe what this dataset contains, its characteristics, how you obtained it and what research question you plan to use it for.
+
+This dataset contains chat-style dialogues specifically designed to capture various anime character personality archetypes commonly found in Japanese media. The dataset includes character traits such as tsundere (initially cold but warm later), yandere (obsessively loving to violent), deredere (openly affectionate), himedere (princess-like attitude), and kamidere (god-complex), among others. Each dialogue pair is crafted to demonstrate how characters with these specific personality types would respond in conversational contexts.
+
+The dataset was created to address the need for personality-consistent dialogue generation in conversational AI systems, particularly for anime-related applications, virtual character interactions, and personality-driven chatbots. I obtained/created this dataset by analyzing anime dialogue patterns, character tropes, and consulting anime community resources to ensure authentic representation of each archetype.
+
+This dataset will be used for:
+1. Fine-tuning language models to generate personality-consistent responses
+2. Research on personality modeling in dialogue systems
+3. Developing anime character chatbots with distinct personality traits
+4. Studying how different personality archetypes affect dialogue patterns and emotional expression
+5. Creating more engaging and character-accurate interactive experiences in anime-related applications
+
+The dataset is particularly valuable for researchers and developers working on character-driven conversational AI, as it provides annotated examples of how specific personality traits manifest in dialogue, which is often lacking in general conversation datasets.
